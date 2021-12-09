@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.home_image{
+    width: 57%;
+    margin: 25% auto;
+    display: block;
+}
+.card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.23), 0 6px 6px rgba(0, 0, 0 ,0.23);
+    border-radius: 11px;
+}
+.card-text-custom{
+    padding: 11% 6%;
+}
+.inherit-width{
+    width : inherit ;
+}
+.background-img{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 98vh;
+    margin : 2%;
+    background: url('https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg');
+    background-position: center;
+
+}
+.forgetPassword-div{
+    padding: 14% 9%;
+    margin: 24% 5%;
+}
+.logindiv{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.23), 0 6px 6px rgba(0, 0, 0 ,0.23);
+    border-radius: 11px;
+    background: #00000026;
+    margin-top:10%;
+    padding: 18px 44px;
+}
+.mail-verified-icon{
+    width: 8%;
+    display: block;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home_card{
+    margin: 10% 11%;
+    padding: 47px;
+    background-color: #f6f4f4;
+    border-color: #f6f4f4;
+
+}
+
+@media only screen and (max-width: 760px){
+   .home-image-div{
+       display:none;
+   }
+    .home_card {
+        margin: 10% 4%;
+    }
+}
+

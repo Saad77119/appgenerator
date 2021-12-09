@@ -1,0 +1,9 @@
+/App_gen_frontend/node_modules
+/App_gen_frontend/bootstrap/cache
+/App_gen_frontend/.env
+/App_gen_frontend/npm-debug.log
+/App_gen_frontend/yarn-error.log
+/App_gen_frontend/package-lock.json
+/App_gen_backend/node_modules
+/App_gen_backend/.env
+/App_gen_backend/package-lock.json

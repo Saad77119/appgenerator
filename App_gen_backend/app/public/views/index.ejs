@@ -1,0 +1,49 @@
+
+<%- include("../templates/header")  %>
+<div class="container row col-md-12">
+    <div class="col-md-6 home-image-div" >
+        <img src="/images/home.svg" class="home_image" alt="register_image"   >
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 ">
+        <div class="card home_card">
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text  text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="male">Gender: </label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="agreedconditions">
+                    <label class="form-check-label" for="agreedconditions">Agreed Terms And Conditions</label>
+                </div>
+                <small class="text-danger " id="error-text"></small>
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+            </form>
+            <small class="text-center">Already have account <a href="/auth/login">Login here!</a></small>
+        </div>
+    </div>
+</div>
+<%- include("../templates/footer") %>

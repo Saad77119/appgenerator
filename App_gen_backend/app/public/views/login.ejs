@@ -1,0 +1,29 @@
+<%- include("../templates/header")  %>
+<div  class="card background-img">
+    <div class="card-body">
+        <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 logindiv">
+            <h2 class="text-center text-light"><b>Login</b></h2>
+            <form id="login-form" class="text-light">
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" required id="email" name="email" placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" required id="password" placeholder="Password">
+                </div>
+                <small id="error-msg" class="text-danger"></small>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+            <small class="text-center link-light"><a href="/auth/forgetpassword">Forget Password</a></small><br/>
+            <small style="color: #fff;" class="text-center link-light">Dont Have An Account <a href="/auth/register">Create One.</a></small>
+        </div>
+        </div>
+    </div>
+</div>
+
+<%- include("../templates/footer") %>
